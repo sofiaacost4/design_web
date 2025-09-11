@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SECITEX</title>
+</head>
+<body>
+    <header>
+        <h1>SECITEX - SEMANA DE CIÊNCIAS, TECNOLOGIA E EXTENSÃO</h1>
+        <nav>
+            <ol> <!-- lista ordenada, tem ordem de prioridade, semântica -->
+                <li><a href="programacao.html">PROGRAMAÇÃO</a></li>
+                <li><a href="inscricao.html">INSCRIÇÃO</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <article> <!-- article - conteúdo ESPECÍFICO da página -->
+            <h2>PROGRAMAÇÃO</h2>
+            <table border="1">
+                <!--
+                    CAPTION - título da tabela
+                    tr - table row - linha da tabela
+                    th - table head - célula de título
+                    td - table data - célula de dados
+                -->
+                <tr>
+                    <th>Atividade</th>
+                    <th>Dia/Hora</th>
+                </tr>
+                <tr>
+                    <td>Palestra de Nicole</td>
+                    <td>12/09 às 11h</td>
+                </tr>
+                <tr>
+                    <td>Palestra de Winnicius</td>
+                    <td>12/09 às 14h</td>
+                </tr>
+                <tr>
+                    <td>Palestra de Juliana Vianna</td>
+                    <td>12/09 às 15h</td>
+                </tr>
+                <tr>
+                    <td colspan="2">CÉLULAS MESCLADAS HORIZONTALMENTE</td>
+                    <!-- colspan - mescla colunas-->
+                </tr>
+                <tr>
+                    <td rowspan="2">CÉLULAS MESCLADAS VERTICALMENTE</td>
+                    <!-- rowspan - mescla linhas -->
+                    <td>CÉLULA QUE SOBROU</td>
+                </tr>
+                <tr>
+                    <td>OUTRA CÉLULA</td>
+                </tr>
+            </table>
+        </article>
+        <aside>
+            <p>CONTEÚDO RELACIONADO - OPCIONAL</p>
+        </aside>
+
+    </main>
+    <footer>
+        <address>
+            av. Senador Salgado Filho , 5487
+        </address>
+        <figure>
+            <a href="https://portal.ifrn.edu.br/"><img src="imagens/logo-ifrn.png" alt="marca do IFRN"</a>
+        </figure>
+        <nav>
+            <ul>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </nav>
+        <p>Desenvolvido por IFRN/CNAT/DIATINF/SOFIA</p>
+    </footer>
+
+</body>
+</html>
