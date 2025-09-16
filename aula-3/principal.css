@@ -1,0 +1,15 @@
+figure{
+    float: right; /* FLOAT - PERMITE UM OBJETO FLUTUAR PRA UM LADO OU PRO OUTRO */
+}
+div.outrospercursos{
+    float: left;
+    border: 2px solid;
+    padding: 1rem;
+    margin: 1rem;
+}
+footer{
+    background-color: darkseagreen;
+    padding: 1rem;
+    text-align: center;
+    clear: left; /* Limpa a tela para os elementos abaixo dos que estão com atributo de float */
+}

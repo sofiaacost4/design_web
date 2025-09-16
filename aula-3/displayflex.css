@@ -1,0 +1,27 @@
+header, footer{ /* A vírgula representa um agrupamento de seletores */
+    background-color: lightblue;
+    padding: 1rem;
+    text-align: center;
+}
+main{
+    display: flex; /* permitem que os elementos de sections fiquem um ao lado do outro */
+    justify-content: center;
+    gap: 1.5rem; /* espaço entre eles, similar ao margin, porém MAIS INDICADO PARA CONFIGURAÇÕES COM FLEX. */
+    flex-wrap: wrap; /*  */
+}
+main > section{
+    /* O caractere ">" seleciona o elemento diretamente filho
+    <main>
+        <section> -> elemento selecionado
+        -- caso tenha section's no parentesco "neta", não é selecionada
+    */
+    width: 20rem;
+    padding: 1rem;
+    border: 2px solid rgb(8, 84, 119);
+    border-radius: 1rem ; /* bordas arredondadas */
+    box-shadow: 0 0 0.3rem 0.3rem rgb(204, 204, 204); /* sombra do objeto */
+    margin: 1rem 0; 
+}
+main > section h2{
+    text-align: center;
+}
