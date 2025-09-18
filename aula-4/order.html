@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order</title>
+    <style>
+        body{
+            display: flex;
+        }
+        section{
+            border: 1px solid black;
+            border-radius: 2rem;
+            padding: 2rem;
+        }
+        section.not-1{
+            order: 4; /* Define a ordem do filho dentro do container - Para usar o atributo de order TODOS OS FILHOS precisam ter o order definido - Precisa ser um número inteiro que começa com 0. */
+        }
+        section.not-2{
+            order: 3
+        }
+        section.not-3{
+            order: 2
+        }
+        section.not-4{
+            order: 1
+        }
+        section.not-5{
+            order: 0
+        }
+        section.not-0{
+            order: 5
+        }
+    </style>
+</head>
+<body>
+    <section class="not-0">
+        <h2>NOTÍCIA 1</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate suscipit officia ea tempore nobis adipisci eligendi. Animi laudantium, nam accusamus sapiente veniam sit provident, enim beatae impedit autem doloremque recusandae.</p>
+    </section>
+    <section class="not-1">
+        <h2>NOTÍCIA 2</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate suscipit officia ea tempore nobis adipisci eligendi. Animi laudantium, nam accusamus sapiente veniam sit provident, enim beatae impedit autem doloremque recusandae.</p>
+    </section>
+    <section class="not-2">
+        <h2>NOTÍCIA 3</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate suscipit officia ea tempore nobis adipisci eligendi. Animi laudantium, nam accusamus sapiente veniam sit provident, enim beatae impedit autem doloremque recusandae.</p>
+    </section>
+    <section class="not-3">
+        <h2>NOTÍCIA 4</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate suscipit officia ea tempore nobis adipisci eligendi. Animi laudantium, nam accusamus sapiente veniam sit provident, enim beatae impedit autem doloremque recusandae.</p>
+    </section>
+    <section class="not-4">
+        <h2>NOTÍCIA 5</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate suscipit officia ea tempore nobis adipisci eligendi. Animi laudantium, nam accusamus sapiente veniam sit provident, enim beatae impedit autem doloremque recusandae.</p>
+    </section>
+    <section class="not-5">
+        <h2>NOTÍCIA 6</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate suscipit officia ea tempore nobis adipisci eligendi. Animi laudantium, nam accusamus sapiente veniam sit provident, enim beatae impedit autem doloremque recusandae.</p>
+    </section>
+
+    
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-basis</title>
+    <style>
+        section{
+            border: 1px solid black;
+            border-radius: 1rem;
+            padding: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1%;
+        }
+        section > div{ /* > : USA PARA PEGAR A DIV "FILHA" DA SECTION, QUE ESTÁ DIRETAMENTE DENTRO */
+            background-color: rgb(221, 221, 221);
+            padding: 1%;
+            flex-basis: 30.6666666666%;
+            border-radius: 1rem;
+        }
+        section > h2{
+            flex-basis: 100%; /* LARGURA DO FILHO */
+            padding: 1%;
+            background-color: gray;
+            border-radius: 1rem;
+        }
+        div.card-50{
+            flex-basis: 47.5%;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h2>NOTÍCIA</h2>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores excepturi aspernatur ratione velit porro reiciendis, corrupti quasi perspiciatis inventore quis autem ab voluptatum rerum, aliquid dolorum eos itaque quia reprehenderit.</p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores excepturi aspernatur ratione velit porro reiciendis, corrupti quasi perspiciatis inventore quis autem ab voluptatum rerum, aliquid dolorum eos itaque quia reprehenderit.</p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores excepturi aspernatur ratione velit porro reiciendis, corrupti quasi perspiciatis inventore quis autem ab voluptatum rerum, aliquid dolorum eos itaque quia reprehenderit.</p>
+        </div>
+        <h2>NOTÍCIA</h2>
+        <div class="card-50">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores excepturi aspernatur ratione velit porro reiciendis, corrupti quasi perspiciatis inventore quis autem ab voluptatum rerum, aliquid dolorum eos itaque quia reprehenderit.</p>
+        </div>
+        <div class="card-50">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores excepturi aspernatur ratione velit porro reiciendis, corrupti quasi perspiciatis inventore quis autem ab voluptatum rerum, aliquid dolorum eos itaque quia reprehenderit.</p>
+        </div>
+        <h2>NOTÍCIA</h2>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores excepturi aspernatur ratione velit porro reiciendis, corrupti quasi perspiciatis inventore quis autem ab voluptatum rerum, aliquid dolorum eos itaque quia reprehenderit.</p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores excepturi aspernatur ratione velit porro reiciendis, corrupti quasi perspiciatis inventore quis autem ab voluptatum rerum, aliquid dolorum eos itaque quia reprehenderit.</p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores excepturi aspernatur ratione velit porro reiciendis, corrupti quasi perspiciatis inventore quis autem ab voluptatum rerum, aliquid dolorum eos itaque quia reprehenderit.</p>
+        </div>
+    </section>
+    
+</body>
+</html>

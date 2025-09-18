@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-items</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            height: 100vh; /* vai pegar a altura relativa ao dispositivo - responsividade */
+            justify-content: center; /* Equivale ao alinhamento horizontal dos elementos. */
+            align-items: center; /* Equivale ao alinhamento vertical ou central dos elementos. Para conseguir usar o align-items, o body PRECISA ter ALTURA 100% */
+        }
+        section{
+            border: 1px solid black;
+            padding: 2rem;
+            border-radius: 2rem;
+            width: 20rem;
+            height: 20rem;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>LOGIN</h1>
+        <form action="">
+            form de login...
+        </form>
+    </section>
+</body>
+</html>
