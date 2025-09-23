@@ -1,0 +1,33 @@
+main{
+    max-width: 70rem;
+    margin: 1rem auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+    "a d d c f" 
+    "a b b b f"
+    "a e e e f";
+    grid-template-rows: 12rem 12rem 12rem;
+}
+section{
+    border: 1px solid black;
+    padding: 1rem;
+}
+section.a{
+    grid-area: a;
+}
+section.b{
+    grid-area: b;
+}
+section.c{
+    grid-area: c;
+}
+section.d{
+    grid-area: d;
+}
+section.e{
+    grid-area: e;
+}
+section.f{
+    grid-area: f;
+}

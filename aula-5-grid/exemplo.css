@@ -1,0 +1,29 @@
+main{
+    max-width: 70rem;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-areas:
+    "a b b c" 
+    "a b b d"
+    "e e e e";
+    grid-template-rows: 15rem 15rem 15rem;
+}
+section{
+    border: 1px solid black;
+    padding: 1rem;
+}
+section.a{
+    grid-area: a;
+}
+section.b{
+    grid-area: b;
+}
+section.c{
+    grid-area: c;
+}
+section.d{
+    grid-area: d;
+}
+section.e{
+    grid-area: e;
+}

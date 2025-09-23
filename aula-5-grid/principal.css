@@ -1,0 +1,29 @@
+main{
+    max-width: 70rem;
+    margin: 1rem auto;
+    display: grid;
+    gap: 1rem; /* assim como no flex, define o espaçamento entre áreas. */
+    grid-template-columns: 1fr 2fr 1fr; /* fr = fração | posso usar a unidade 'fr' e as outras unidades | grid-template-columns: define a LARGURA da coluna*/
+    grid-template-rows: 10rem 10rem; /* grid-template-rows: define a ALTURA das linhas. A quantidade dos valores é igual à quantidade de LINHAS. CUIDADO: A altura ficará LIMITADA!! */
+    grid-template-areas:
+    "b d c"
+    "a a c";
+    /* A variável não pode começar com número, não pode ser só número e não pode ter caractéres especiais. Todas as variáveis precisam estar no grid-template-areas, não pode ser na diagonal. */
+} /* para trabalhar com grid é necessário das ÁREAS. */
+section{
+    border: 1px solid black;
+    padding: 1rem;
+    overflow: auto; /* OVERFLOW: Possibilita a barra de rolagem!!!! */
+}
+section.noticias{
+    grid-area: a; /* a definição de área é feita utilizando o atributo de GRID-AREA. */
+}
+section.comemoracao{
+    grid-area: b;
+}
+section.organizadores{
+    grid-area: c;
+}
+section.corrida{
+    grid-area: d;
+}
