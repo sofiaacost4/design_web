@@ -1,0 +1,30 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+li{
+    list-style-type: none;
+}
+ol > li{
+    display: inline;
+    position: relative;
+    /* é pra fazer a sublista ficar no lugar*/
+}
+ol > li > a{
+    /* o âncora é formatado para ocupar uma área maior, e, assim, melhorando a usabilidade */
+    display: inline-block;
+    padding: 1rem;
+    color: darkcyan;
+    background-color: gainsboro;
+    text-decoration: none;
+}
+li > ul{
+    position: absolute;
+    padding: 1rem;
+    background-color: gainsboro;
+    visibility: hidden; /* vai deixar com a visibilidade escondida. */
+    top: 30px;
+    left: 0;
+}
+ol > li:hover ul{
+    visibility: visible; /* ao passar o mouse sobre o li, que está dentro do ol, formata-se o ul. */
+}
