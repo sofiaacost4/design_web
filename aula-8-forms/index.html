@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição para a aula de campo</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <h1>Inscrição para a aula de campo</h1>
+    <form action="dadosenviados.html"> <!--  ♥ O atributo de ACTION deverá receber o arquivo de programação (back-end) que processará os dados.-->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Nome" required> <br>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" placeholder="Email" required id="email"> <br>
+        <label for="curso">Curso:</label>
+        <select name="curso" id="curso">
+            <!-- ♥ COMBOBOX
+              ♥ Usado quando o usuário tem um grupo muito longo de itens muito específicos
+            -->
+            <option value="infoweb" selected >INFOWEB</option>
+            <option value="adm">Administração</option>
+            <option value="msi">Manutenção e suporte</option>
+            <option value="cam">Controle Ambiental</option>
+        </select> <br>
+        <label><input type="radio" name="dir" checked value="diatinf"> DIATINF</label>
+        <label><input type="radio" name="dir" value="diacin"> DIACIN</label>
+        <label><input type="radio" name="dir" value="diacon"> DIACON</label>
+        <label><input type="radio" name="dir" value="diaren"> DIAREN</label>
+        <label><input type="radio" name="dir" value="diac"> DIAC</label>
+        <!--  ♥ quando se usa o input do tipo RADIO, o valor colocado no name deve ser o mesmo! -->
+         <br>
+
+        <label><input type="radio" name="turno" value="mat"> MATUTINO</label>
+        <label><input type="radio" name="turno" value="ves"> VESPERTINO</label>
+        <br>
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" list="cidade-list"> <br>
+        <datalist id="cidade-list"> <!-- ♥ DATALIST - funciona de forma semelhante ao COMBOBOX, mas o usuário pode selecionar a opção E escrever. Também pode ser reaproveitado (utilizado várias vezes no msm formulário) -->
+            <option value="Natal">
+            <option value="Parnamirim">
+            <option value="Macaíba">
+            <option value="Tibau">
+        </datalist>
+        <label for="obs">Observações:</label>
+        <textarea name="obs" id="obs" maxlength="150" cols="30" rows="10">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque asperiores consequatur illo hic ab optio quia, sequi ratione ipsum? Quia error corrupti facilis! Quis necessitatibus eos accusantium eveniet? Esse, accusamus?</textarea> <br>
+        <!-- ♥ TEXTAREA - é um campo que permite texto com parágrafos
+             ♥ MAXLENGTH - limita a quantidade máxima de palavras no TEXTAREA-->
+        <input type="submit" value="ENVIAR">
+        <!--<button type="submit">ENVIAR</button>!-->
+    </form>
+    
+</body>
+</html>

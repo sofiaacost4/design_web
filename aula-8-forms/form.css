@@ -1,0 +1,6 @@
+label[for]{
+    display: inline-block;
+    width: 12rem; /* ♥ A marcação de LABEL não permite a definição de largura, porque ela tem o comportamento DISPLAY com valor INLINE!!
+                    Por isso, é necessário definir DISPLAY com valor INLINE-BLOCK. Isso foi feito para ALINHAR o formulário*/
+    vertical-align: top; /* ♥ O atributo de VERTICAL-ALIGN deixará a label alinhada horizontalmente ao topo do TEXTAREA*/
+}
