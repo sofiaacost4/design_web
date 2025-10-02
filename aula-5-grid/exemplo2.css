@@ -9,6 +9,7 @@ main{
     "a e e e f";
     grid-template-rows: 12rem 12rem 12rem;
 }
+
 section{
     border: 1px solid black;
     padding: 1rem;
