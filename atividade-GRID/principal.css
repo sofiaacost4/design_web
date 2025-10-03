@@ -1,71 +1,267 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 body{
-    font-family: 'Roboto Mono', monospace;
+    max-width: 100rem;
+    margin: 0 auto;
+}
+header, footer, main{
+    max-width: 100rem;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 header{
-    border: 1px solid black;
-    background-color: #224459;
+    padding: 1rem;
+    background-image: linear-gradient(to left, #7292A6, #224459 );
     color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+header h1{
+    margin: auto 1rem;
+    padding-top: 1rem;
+}
+header h2{
+    margin: auto 1rem;
+    padding-bottom: 1rem;
 }
 main{
-    max-width: 100%;
-    margin: 1rem auto;
+    width: 100rem;
+    margin: 0.8rem auto;
     display: grid;
     gap: 0.8rem;
     grid-template-areas:
     "a b c c c d"
     "a e f f g h"
     "a i f f j j";
-    grid-template-rows: 12rem 12rem 12rem;
+    display: grid;
+    grid-template-columns: 20rem 15.2rem 15.2rem 15.2rem 15.2rem 15.2rem;
+    grid-template-rows: 15.2rem 15.2rem 15.2rem;
 }
 section{
-    border: 1px solid black;
     padding: 1rem;
+    background-color: #e9eaeb;
 }
+
 section.menu{
     grid-area: a;
     background-color: #bfcfda;
 }
 section.menu ol > li{
     color: #2980B9;
-    padding: 2.4rem;
-    font-size: 25px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-size: 35px;
     text-decoration: none;
     list-style-type: none;
+    font-family: 'Roboto Mono', monospace;
 }
-section.b{
+section.menu a{
+    text-decoration: none;
+    color:#3c6884;
+}
+section.texto1{
     grid-area: b;
+    font-family: Arial, Helvetica, sans-serif;
 }
-section.c{
+section.texto1 p{
+    margin: 0.5rem;
+    line-height: 2rem;
+    width: 176px;
+    font-size:15px;
+}
+section.texto1 .Cillum{
+    color:#224459;
+    font-weight: bold;
+}
+section.texto1 .enim{
+    color:#224459;
+    font-weight: bold;
+}
+section.texto1 .incididunt{
+    color:#224459;
+    font-weight: bold;
+}
+section.texto1 a{
+    padding: 0.3rem;
+    margin-left: 0.5rem;
+    text-decoration: none;
+    color:#3c6884;
+    border: 1px #3c6884 solid;
+}
+section.programacao{
     grid-area: c;
 }
-section.d{
-    grid-area: d;
+section.programacao h2{
+    font-family: 'Roboto Mono', monospace;
+    padding: 0.5rem;
 }
-section.e{
+section.programacao table{
+    border-collapse: collapse;
+    max-width: 709px;
+    margin: 0.5rem auto;
+}
+
+section.programacao tr > td{
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1.5px white solid;
+    padding: 0.4rem 0;
+    width: 230px;
+    text-align: center;
+}
+
+section.img_amanda{
+    padding: 0;
+    grid-area: d;
+    background-image:url("imagens/amanda.jpg");
+    background-size: cover;
+    filter: grayscale(90%);
+}
+section.img_amanda figcaption{
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgba(80, 80, 80, 0.3);
+    padding: 1.5rem;
+    text-align: center;
+    margin-top: 66px;
+    margin-bottom: 100px;
+}
+section.lista1{
     grid-area: e;
 }
-section.f{
+section.lista1 ul > li{
+    font-family: Arial, Helvetica, sans-serif;
+    position: right;
+    padding: 0.5rem;
+    padding-left: 0;
+    margin: 0 0 0 1.5rem;
+}
+section.lista1 ul{
+    margin: 0.5rem 0 0 0.5rem;
+}
+section.inscricao{
     grid-area: f;
 }
-section.g{
-    grid-area: g;
+section.inscricao form{
+    max-width: 467.2px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.5rem;
 }
-section.h{
+section.inscricao h2{
+    font-family: 'Roboto Mono', monospace;
+    padding: 0.5rem;
+}
+section.inscricao input[placeholder]{
+    max-width: 467.2px;
+    width: 416px;
+    border: 2.5px #6b6b6b solid;
+    padding: 0.9rem;
+    margin-bottom: 1.5rem;
+    margin-left: 0.5rem;
+}
+section.inscricao input[type="radio"]{
+    appearance: none;
+    margin-left: 0.5rem;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #5d5d5d;
+    border-radius: 0;
+    cursor:auto;
+    position: relative;
+}
+section.inscricao input[type="radio"]:checked {
+    background: #b7b7b7;
+}
+section.inscricao input[type="submit"]{
+    display: block;
+    width: 250px;
+    border: 1px rgb(33, 33, 33) solid;
+    margin: 20px auto;
+    padding: 1rem;
+    background-color: rgb(33, 33, 33);
+    color: gray;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+section.img_georgia{
+    padding: 0;
+    grid-area: g;
+    background-image:url("imagens/georgia.jpg");
+    background-size: cover;
+    filter: grayscale(90%);
+}
+section.img_georgia figcaption{
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgba(80, 80, 80, 0.3);
+    padding: 1.5rem;
+    text-align: center;
+    margin-top: 66px;
+    margin-bottom: 100px;
+}
+section.img_henrique figcaption{
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgba(80, 80, 80, 0.3);
+    padding: 1.5rem;
+    text-align: center;
+    margin-top: 66px;
+    margin-bottom: 100px;
+}
+section.img_henrique{
+    padding: 0;
     grid-area: h;
+    background-image:url("imagens/henrique.jpg");
+    background-size: cover;
+    filter: grayscale(90%);
+}
+section.img_ellen figcaption{
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgba(80, 80, 80, 0.3);
+    padding: 1.5rem;
+    text-align: center;
+    margin-top: 66px;
+    margin-bottom: 100px;
 }
 section.img_ellen{
+    padding: 0;
     grid-area: i;
     background-image:url("imagens/ellen.jpg");
     background-size: cover;
-    filter: grayscale(100%);
+    filter: grayscale(90%);
 }
-section.j{
+section.organizacao{
     grid-area: j;
+}
+section.organizacao h2{
+    font-family: 'Roboto Mono', monospace;
+    margin: 0.5rem;
+}
+section.organizacao ol > li{
+    list-style-type: none;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+}
+section.organizacao ul > li{
+    list-style-type: disc;
+    margin-left:1rem;
+    padding: 0.5rem;
+    padding-left: 0;
+}
+section.organizacao ul {
+    margin-top:0.5rem;
+}
+section.organizacao ol{
+    font-family: Arial, Helvetica, sans-serif;
 }
 footer{
     border: 1px solid black;
     background-color: #224459;
-    padding: 1.5rem;
+    padding: 5rem;
     color: white;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
