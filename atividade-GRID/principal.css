@@ -1,19 +1,15 @@
 *{
     padding: 0;
     margin: 0;
-}
-body{
-    max-width: 100rem;
-    margin: 0 auto;
-}
-header, footer, main{
-    max-width: 100rem;
-    width: 100%;
-    margin: 0 auto;
     box-sizing: border-box;
 }
+body{
+    min-width: 100rem;
+    max-width: 100rem;
+    margin: 0 auto;
+}
 header{
-    padding: 1rem;
+    padding: 0.5rem;
     background-image: linear-gradient(to left, #7292A6, #224459 );
     color: white;
     font-family: 'Roboto Mono', monospace;
@@ -27,17 +23,17 @@ header h2{
     padding-bottom: 1rem;
 }
 main{
+    min-width: 100rem;
     width: 100rem;
     margin: 0.8rem auto;
     display: grid;
     gap: 0.8rem;
     grid-template-areas:
-    "a b c c c d"
-    "a e f f g h"
-    "a i f f j j";
-    display: grid;
-    grid-template-columns: 20rem 15.2rem 15.2rem 15.2rem 15.2rem 15.2rem;
-    grid-template-rows: 15.2rem 15.2rem 15.2rem;
+    "a b c c d"
+    "a e f g h"
+    "a i f j j";
+    grid-template-columns: 20rem 17.2rem 25.2rem 17.2rem 17.2rem;
+    grid-template-rows: 17.2rem 17.2rem 17.2rem;
 }
 section{
     padding: 1rem;
@@ -50,7 +46,7 @@ section.menu{
 }
 section.menu ol > li{
     color: #2980B9;
-    padding: 1rem;
+    padding: 0.5rem;
     margin-bottom: 2rem;
     font-size: 35px;
     text-decoration: none;
@@ -99,15 +95,15 @@ section.programacao h2{
 }
 section.programacao table{
     border-collapse: collapse;
-    max-width: 709px;
+    max-width: 642,17px;
     margin: 0.5rem auto;
 }
 
 section.programacao tr > td{
     font-family: Arial, Helvetica, sans-serif;
     border: 1.5px white solid;
-    padding: 0.4rem 0;
-    width: 230px;
+    padding: 0.7rem 0;
+    width: 214px;
     text-align: center;
 }
 
@@ -144,7 +140,6 @@ section.inscricao{
     grid-area: f;
 }
 section.inscricao form{
-    max-width: 467.2px;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 0.5rem;
 }
@@ -153,26 +148,14 @@ section.inscricao h2{
     padding: 0.5rem;
 }
 section.inscricao input[placeholder]{
-    max-width: 467.2px;
-    width: 416px;
+    max-width: 355.2px;
+    width: 355.2px;
     border: 2.5px #6b6b6b solid;
-    padding: 0.9rem;
     margin-bottom: 1.5rem;
     margin-left: 0.5rem;
+    padding: 1rem;
 }
-section.inscricao input[type="radio"]{
-    appearance: none;
-    margin-left: 0.5rem;
-    width: 15px;
-    height: 15px;
-    border: 2px solid #5d5d5d;
-    border-radius: 0;
-    cursor:auto;
-    position: relative;
-}
-section.inscricao input[type="radio"]:checked {
-    background: #b7b7b7;
-}
+
 section.inscricao input[type="submit"]{
     display: block;
     width: 250px;
@@ -182,7 +165,12 @@ section.inscricao input[type="submit"]{
     background-color: rgb(33, 33, 33);
     color: gray;
     font-weight: bold;
+    
     cursor: pointer;
+}
+
+section.inscricao input[type="checkbox"]{
+    margin-left: 0.5rem;
 }
 
 section.img_georgia{
