@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- para a responsividade, a tag de viewport vai melhorar a visualização da página no dispositivo -->
+    <title>Responsividade</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>HALLOWEEN CNAT 2025</h1>
+    </header>
+    <div>
+        <!-- 
+            1 - a marcação de PICTURE equivale à responsividade de imagens;
+            2 - a marcação de SOURCE tem dois atributos: SRCSET e MEDIA; o MEDIA recebe o IF (condicional). Podem ter várias marcações de source. As imagens de cima são as maiores e vão diminuindo de tamanho;
+            3 - a LARGURA do SOURCE deve ser adequada à resolução do dispositivo utilizado pelo público-alvo do projeto.
+            4 - a tag de PICTURE pode ficar dentro de qualquer outra tag que recebe uma imagem.
+        -->
+        <picture> <!-- MARCAÇÃO ESPECIFICA PARA RESPONSIVIDADE DE IMAGENS -->
+            <source srcset="imagens/destaque-desktop.jpg" media="(min-width:1440px)">
+            <source srcset="imagens/destaque-tablet.jpg" media="(min-width:744px)">
+            <img src="imagens/destaque-mobile.jpg" alt="">
+        </picture>
+    </div>
+    <main>
+        <section>
+            <h2>Organizadores</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ut earum itaque dolorem optio harum dolore, fugit architecto neque blanditiis eaque exercitationem sapiente pariatur odit numquam accusamus quia! Vel, cum?</p>
+        </section>
+        <section>
+            <h2>Programação</h2>
+            <p>Accusantium architecto quaerat magnam, ex a necessitatibus, inventore neque nesciunt dolore sequi repellat cupiditate id rem atque. Veniam laudantium, itaque, at inventore enim accusantium, libero neque quae labore perferendis quas.</p>
+        </section>
+        <section>
+            <h2>Praça de alimentação</h2>
+            <p>Veritatis nisi aperiam molestiae facere et eligendi at explicabo cumque repellendus quae vitae voluptatum recusandae iste quod totam, a culpa consequatur quam maiores dolor magnam. Odit in ab magnam ut.</p>
+        </section>
+        <section>
+            <h2>Contato</h2>
+            <p>Ut fugit esse laudantium odit vel expedita natus! Perspiciatis consequatur praesentium excepturi ex vel doloribus nostrum animi soluta nobis laborum, explicabo, ducimus assumenda! Rerum, illum itaque quam facilis vero eius.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por IFRN/CNAT/DIATINF/INFOWEB</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+div{
+    text-align: center;
+}
+main{
+    display: flex;
+    flex-wrap: wrap; /* PRECISA COLOCAR O FLEX-WRAP */
+    gap: 1rem;
+    justify-content: center;
+}
+section{
+    border: 1px solid black;
+    padding: 1rem;
+    flex-basis: 22%; /* permitirá que as 4 section's fiquem todas em 1 linha */
+}
+@media (max-width: 1440px){ /* mediascreen - é a tecnica condicional (if) para responsividade utilizando css. */
+    body{
+        background-color: rgb(159, 177, 171);
+    }
+    section{
+        flex-basis: 48%; /* permitirá que fique 2 section's por linha  */
+    }
+}
+
+@media (max-width: 744px){
+    body{
+        background-color: rgb(203, 216, 212);
+    }
+    section{
+        flex-basis: 98%; /* permitirá que cada section fique em uma linha  */
+    }
+}
