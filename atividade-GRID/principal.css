@@ -146,8 +146,8 @@ section.inscricao h2{
     padding: 0.5rem;
 }
 section.inscricao input[placeholder]{
-    width: 435.2px; /*  largura do h2 - 16px */
-    border: 2.5px #6b6b6b solid;
+    width: calc(100% - 16px); /* largura do form (mas usei o h2, que tem a msm largura, de referência) - 16px (área do padding do h2) para fazer os inputs sempre ficarem no centro da terceira coluna, n importando sua largura no grid */
+    border: 2.5px #6b6b6b solid; /* o h2, com o padding 0.5rem, está alinhado perfeitamente como quero, mas sua verdadeira largura tem 16px a mais, por isso precisei fazer esse pequeno cálculo 👍 */
     margin-bottom: 1.5rem;
     margin-left: 0.5rem;
     padding: 1rem;
