@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Coral+Pixels&display=swap');
+
+:root{ /* Definição de variáveis no elemento principal root/html */
+    --princ-tx: blue;
+    --princ-bg: rgb(232, 236, 236);
+}
+body{
+    background-color: var(--princ-bg);
+    font-family: "Coral Pixels", serif;
+    font-style: normal;
+}
+
+/*
+SELETORES:
+
+* - TUDO
+p.destaque - A TAG <P> QUE TEM O CLASS COM O VALOR "DESTAQUE";
+.destaque - QUALQUER TAG QUE TENHA O CLASS COM O VALOR "DESTAQUE";
+#destaque - SELECIONA A MARCAÇÃO QUE TEM O ID COM O VALOR "DESTAQUE";
+section#destaque - SELECIONA A TAG <SECTION> QUE TEM O ID COM O VALOR "DESTAQUE";
+ol, ul - SELECIONA A TAG <OL> E <UL>;
+p a - SELECIONA TODAS AS TAGS <A> QUE ESTÃO DENTRO DA TAG <P>;
+        <p><span><a>aqui</a></span></p> (ESTAS TAGS DE ÂNCORA SERIAM SELECIONADAS, MAS NO p > a NÃO, POIS NÃO SÃO FILHAS DIRETAS DO <P>);
+p > a - SELECIONA TODAS AS TAGS <A> FILHAS DIRETAS DA TAG <P>;
+header + section - SELECIONA A MARCAÇÃO DE <section> QUE ESTÁ IMEDIATAMENTE DEPOIS DA MARCAÇÃO DE <header>;
+.tx-grande.verde - SELECIONA A MARCAÇÃO QUE TEM A CLASS .VERDE QUE ESTÁ DENTRO DA TAG QUE TEM A CLASS PX-GRANDE;
+p:hover - ('hover' é uma sub-classe - efeito de passar o mouse);
+li:first-child - SELECIONA O PRIMEIRO <li>;
+tr:nth-child(int ou odd ou even) - SELECIONA A ENÉSIMA (número q vc colocar no ()) MARCAÇÃO. 
+        EVEN - FILHOS PARES | ODD - FILHOS ÍMPARES |
+img[src="face.png"] - SELECIONA A TAG <img> QUE TEM O ATRIBUTO src QUE TEM O VALOR "face.png";
+input[type="submit"] - SELECIONA O INPUT QUE TEM O ATRIBUTO type QUE TEM O VALOR "submit";
+label[for] - SELECIONA TODAS AS MARCAÇÕES DE LABEL COM O ATRIBUTO DE 'for' DEFINIDO;
+
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    padding: 1.5rem;
+    background-color: rgb(212, 147, 212);
+    margin: 1.5rem;
+}
+header + section{
+    background-color: pink;
+}
+section{
+    height: 20rem;
+    background-color: #b1b1b1;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    margin: 1.5rem;
+}
+section p{
+    animation-name: mostrar; /* NOME DA ANIMAÇÃO (LIVRE) */
+    animation-duration: 1s; /* DURAÇÃO DA ANIMAÇÃO */
+    animation-delay: 0.5s; /* DELAY DA ANIMAÇÃO */
+    animation-iteration-count: infinite; /* POR FAVOR, NÃO USE */
+}
+@keyframes mostrar{ /* COLOCA O NOME DA ANIMAÇÃO DPS DE @keyframes */
+    0%{
+        transform: translateX(-100px);
+        /*  */
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+div.elipse{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    animation-name: elipse;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes elipse{
+    0%{
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translateX(2000px);
+    }
+}
