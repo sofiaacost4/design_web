@@ -82,7 +82,7 @@ div.elipse{
 }
 @keyframes elipse{
     0%{
-        transform: translateX(-100px);
+        transform: translateX(-2000px);
     }
     100%{
         transform: translateX(2000px);

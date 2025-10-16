@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonbon&display=swap');
+body{
+    background-color: rgb(255, 235, 239) !important; /* !important - COMANDO UTILIZADO PARA DEFINIR PRIORIDADE A UM ATRIBUTO */
+    background-color: aqua;
+    font-family: "Bonbon", cursive;
+}
+h1{
+    text-align: center;
+    color: rgb(82, 63, 128);
+    font-size: 3rem;
+    background-color: pink;
+    border-radius: 90px;
+    padding: 2rem 0;
+}
+main{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background-color: rgb(230, 216, 243);
+    border-radius: 90px;
+}
+div{
+    color: rgb(209, 62, 86);
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 1.8rem;
+    transition-property: all;
+    /*transition-property: APLICA O EFEITO NOS ATRIBUTOS; */
+    transition-duration: 0.4s; 
+    /*transition-duration: DURAÇÃO DA TRANSIÇÃO; */
+    /*transition-behavior: MUDA RAPIDO OU MUDA LENTO; */
+}
+div:hover{
+    filter: blur(0);
+    border-radius: 17rem;
+    font-size: 2rem;
+    box-shadow:0 0 90px rgb(255, 255, 255);
+    color: rgb(82, 63, 128);
+    background-color: rgb(255, 255, 255);
+}
+input{
+    /* TRANSITION - DEFINE UM EFEITO DE TRANSIÇÃO DO HOVER */
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+input:focus{
+    background-color: rgb(206, 185, 226);
+}
