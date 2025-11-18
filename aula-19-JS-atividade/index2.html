@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade de Javascript</title>
+</head>
+<body>
+    <label>Nome: </label>
+    <input id="input"></input>
+    <button id="botao">Adicionar</button>
+    <p id="texto"></p>
+    <script>
+        let lista = ['Kelvin', 'Helena', 'Duda']
+        function exibirlista(){
+            document.getElementById('texto').innerHTML = ''
+            for(n = 0; n <= lista.length - 1; n++){
+                document.getElementById("texto").innerHTML += lista[n] + '<br>'
+            }
+        }
+        button = document.getElementById('botao')
+        button.addEventListener('click', function(e){
+            let nomeinput = document.getElementById('input').value
+            lista.push(nomeinput)
+            exibirlista()
+        })
+        exibirlista()
+    </script>
+</body>
+</html>

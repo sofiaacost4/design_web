@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - funções</title>
+</head>
+<body>
+    <p id="texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet molestiae libero numquam quia repellat enim eveniet natus quae blanditiis, possimus ipsam perferendis totam molestias nesciunt odio, doloribus dignissimos maxime aspernatur.</p>
+    <input type="color" id="color">
+    <button onclick="mudarcor()">BUTTON - atributo onclick</button>
+    <button id="botao2">BUTTON - com addEventListener</button>
+    <script>
+        let produtos = ['lapis', 'tesoura', 'borracha']
+        produtos.forEach(function(item, indice, lista){
+            console.log(`Array com forEach:\nITEM:${item}, ÍNDICE:${indice}, LISTA:${lista}`)
+        })
+
+        function mudarcor(){
+            let color = document.getElementById('color').value
+            document.body.style.backgroundColor = color
+        }
+
+        botao2 = document.getElementById('botao2')
+        botao2.addEventListener('click', function(){
+            console.log('ppp')
+            let color = document.getElementById('color').value
+            document.getElementById('texto').style.color = color
+        })
+
+        function somar(){
+            return 10 + 10
+        }
+        console.log(somar())
+
+        function somar2(n1, n2){
+            return n1 + n2
+        }
+        console.log(somar2(10, 10))
+
+        function somar3(n1, n2, n3){
+            return n1 + n2 + n3
+        }
+        console.log(somar3(10, 10, 20))
+
+        function somar4(n1 = 0, n2 = 0){
+            return n1 + n2
+        }
+        console.log(somar4(10))
+
+        function somar5(n1, n2){
+            if (!isNaN(n1) && !isNaN(n2)){ 
+                return n1 + n2
+            }else{
+                return 'DIGITE UM VALOR NUMÉRICO'
+            }
+        }
+        console.log(somar5(10, 10))
+        console.log(somar5(10, 'ppp'))
+
+        function borda(cor, espessura){
+            document.body.style.borderColor = cor
+            document.body.style.borderWidth = espessura + 'rem'
+            document.body.style.borderStyle = 'solid'
+        }
+        borda('blue', 2)
+    </script>
+</body>
+</html>

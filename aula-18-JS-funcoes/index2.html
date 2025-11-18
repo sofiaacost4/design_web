@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    <p id="texto">Saicoco vai passar de ano e gabaritar o 2 dia do enem</p>
+    <input type="color" id="color">
+    <button onclick="mudardecor()">BOTÃO - APERTE O BOTÃO</button>
+    <button id="botao2">BOTÃO 2 - APERTE ESTE OUTRO LINDO BOTÃO</button>
+    <script>
+
+        let queridas = ['saicoco', 'luisa', 'sofia']
+        queridas.forEach(function(item, indice, lista){
+            console.log(`Array com forEach: \nITEM:${item}, ÍNDICE:${indice}, LISTA:${lista}`)
+        })
+
+        function mudardecor(){ // e é assim que se faz uma função (dps vc pode usar no código de html)
+            let color = document.getElementById('color').value
+            document.body.style.backgroundColor = color
+        }
+
+        botao2 = document.getElementById('botao2')
+        botao2.addEventListener('click', function(){
+            console.log('VOCÊ CLICOU NO BOTÃO 2')
+            let color = document.getElementById('color').value
+            document.getElementById('texto').style.color = color
+        })
+        
+        function somar(){
+            return 10 + 10
+        }
+
+        console.log(somar())
+        function somar2(n1, n2){
+            return n1 + n2
+        }
+
+        console.log(somar2(10, 10))
+
+        function somar3(n1, n2, n3){
+            return n1 + n2 + n3
+        }
+
+        function somar4(n1 = 0, n2 = 0){
+            return n1 + n2
+        }
+
+        console.log(somar4(10))
+
+        function somar5(n1, n2){
+            if (!isNaN(n1) && !isNaN(n2)){
+                return n1 + n2
+            }else{
+                return "DIGITE UM VALOR NUMÉRICO"
+            }
+        }
+
+        console.log(somar5(10,10))
+        console.log(somar5(10, "texto"))
+
+        function borda(cor, espessura){
+            document.body.style.borderColor = cor
+            document.body.style.borderWidth = espessura + 'rem'
+            document.body.style.borderStyle = 'solid'
+        }
+        borda('pink', 2)
+    </script>
+</body>
+</html>
