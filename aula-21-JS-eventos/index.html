@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Eventos</title>
+    <style>
+        .grande{
+            font-size: 2rem;
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <form action="" name="cadastro">
+        <label>
+            Nome: <input type="text">
+        </label>
+        <select name="cidade" id="">
+            <option value="natal">Natal</option>
+            <option value="recife">Recife</option>
+        </select>
+        <input type="submit">
+    </form>
+
+
+    <ol id="alunos">
+        <li>Júlia</li>
+        <li>Eduarda</li>
+        <li>João</li>
+        <li>Maria</li>
+        <li>Juliana</li>
+    </ol>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, nobis dolorem provident vitae beatae omnis rem laborum perferendis aperiam nostrum quas, sed cupiditate ut. Saepe necessitatibus porro quibusdam vitae enim?</p>
+    <p>Praesentium consectetur voluptatibus vitae eos nam! Voluptate voluptatibus odit, id minima aperiam architecto. Sapiente itaque assumenda sed perferendis eum consectetur nisi, expedita autem odit! Officiis temporibus dolore saepe nulla fugit.</p>
+    <p>Illum consectetur, similique pariatur sed exercitationem quaerat reiciendis eius excepturi recusandae doloremque soluta nisi ipsa omnis cumque! Dolor aliquid cupiditate beatae tenetur tempore, omnis porro laudantium corporis officiis quos? Iusto!</p>
+    <p>Perferendis, recusandae modi explicabo ipsam laborum animi nostrum doloribus possimus similique corrupti dolore aut, quis repudiandae nulla ad esse. Impedit nisi autem distinctio laudantium eaque, libero ullam veniam nemo soluta!</p>
+    <p>Dolor, officia velit fuga aut, quidem earum sint possimus libero praesentium exercitationem odit. Dolorum impedit quidem placeat, rem deserunt similique dolor hic iusto cupiditate praesentium ipsam optio id aspernatur sed!</p>
+    <p>Ea distinctio sapiente corporis, iste dolores repellat saepe hic libero, tempore voluptatibus voluptate ex itaque molestias! Voluptas numquam doloribus ea optio? Corporis quasi illum, velit itaque illo error recusandae quia!</p>
+    <p>Vel ea esse harum illum magnam ullam blanditiis, voluptatem reprehenderit at recusandae itaque nam officiis ipsa alias! Nam eveniet similique, dolore tempore praesentium, magnam minima autem deleniti rerum, excepturi voluptate.</p>
+    <p>Iusto eligendi illum numquam, commodi labore modi aperiam ullam officiis sequi nostrum illo molestias minus a veritatis facilis quibusdam, culpa fuga rerum error soluta. Architecto laborum perferendis tempora aut cupiditate.</p>
+    <p>Assumenda, odio. Autem amet cupiditate perferendis ducimus odit eum, consectetur reprehenderit vitae, porro, tempore delectus modi! Sit cum temporibus impedit officiis molestiae ipsum, minus sed, nesciunt voluptate harum ipsam cumque.</p>
+    <p>Minus quidem molestiae aliquam nemo temporibus odit, necessitatibus earum ratione. Aliquid rem voluptatem consequatur laboriosam adipisci sed inventore dicta voluptate distinctio corporis fugiat deleniti, saepe laborum explicabo quam consectetur qui?</p>
+    <p>Placeat vel cupiditate atque at suscipit necessitatibus ratione praesentium a corporis in asperiores iure, voluptatum minus nemo dolorum pariatur deleniti debitis eum! Harum animi veritatis mollitia illum maxime similique itaque.</p>
+    <p>Ipsa sequi dolorum officiis eaque maiores tenetur eligendi dignissimos fugit! Repudiandae exercitationem maiores deserunt asperiores ullam labore architecto molestias. Suscipit quod numquam dolores dolorem repudiandae aliquam explicabo, dolore similique enim!</p>
+    <p>Asperiores neque possimus nihil voluptatum, magni ad officiis debitis non ducimus? Repellat, minus adipisci? Sapiente architecto pariatur quam animi iure, aut magnam voluptates provident debitis, delectus libero quod quia totam?</p>
+    <p>Accusamus nostrum iusto dolor laborum ullam nisi numquam molestiae exercitationem corrupti provident, voluptas tenetur. Illum temporibus hic, eos, sed dignissimos maiores doloremque quod excepturi earum recusandae, officia cupiditate quas iure.</p>
+    <p>Sunt veritatis perspiciatis dolore voluptates quod obcaecati nobis, accusantium, error dignissimos dolor ullam magnam accusamus, quaerat libero. Sapiente officiis ut cupiditate esse aliquam, ea aliquid fugit ullam animi. Officiis, quidem!</p>
+    <p>Eos repudiandae odit, iusto autem excepturi totam minima blanditiis maiores veritatis quis error in rem vero pariatur earum esse? Commodi voluptas odit recusandae possimus. Quisquam porro incidunt esse harum laborum.</p>
+    <p>Quas at veritatis consequatur ullam rerum est omnis minima necessitatibus nesciunt, fugit repellendus consequuntur doloribus corporis quisquam impedit accusamus voluptatum sint animi architecto pariatur dolor! Aut alias velit doloribus ducimus?</p>
+    <p>Sint incidunt odit, atque laudantium placeat distinctio nesciunt officia illo consequatur molestias voluptas fuga, magnam assumenda doloremque, fugit sit laboriosam quasi! Aspernatur et laborum corrupti tempora, fugit explicabo est doloremque!</p>
+    <p>Possimus minus ducimus maiores, id odit deleniti ab labore? Illo suscipit minima accusamus debitis cum incidunt aliquid cumque aperiam, tempore corporis, dignissimos deserunt. Similique qui, quibusdam eos expedita corporis in?</p>
+    <p>Vel, eveniet ullam blanditiis recusandae iure vitae sint reiciendis porro repellendus, adipisci dolorum laboriosam, praesentium eaque. Veniam vitae, dignissimos iste eveniet autem quidem quisquam. Minima enim fuga nulla voluptatibus beatae.</p>
+    <script>
+        const lista = document.getElementById("alunos");
+        const novoli = document.createElement("li");
+        novoli.setAttribute('class','grande');
+        novoli.textContent = "NOVO ALUNO: VINÍCIUS"; // InnerHTML: COLOCAR conteúdo, recebe várias tags // textContent; recebe APENAS textos;
+        lista.appendChild(novoli); // AQUI COLOCO O NOVO LI NA LISTA
+        // variável lista e o novo filho nos parênteses
+        // lista.removeChild(novoli); | removeChild: remove o novoli da lista;
+
+        // EVENTOS DE INTERFACE
+        // load: quando começou o carregamento
+        // unload: acionada quando a página é totalmente carregada
+        // error: quando tem um erro
+        // resize: quando a janela é redimensionada
+        // scroll: quando a barra de rolagem é usada
+        const body = document.querySelector('body');
+        function eventoload(){
+            console.log('Função eventoload');
+        }
+        function eventoscroll(){
+            console.log('Função eventoscroll');
+        }
+        window.addEventListener("load", eventoload);
+        window.addEventListener("scroll", eventoscroll);
+
+        // EVENTOS DE TECLADO
+        // keydown - É PRESSIONADA a tecla
+        // KEYUP - solta a tecla
+        // KEYPRESS - (n é mais usada) teclado está pressionada
+        
+        const input = document.querySelector("input");
+        function eventokeydown(e){
+            console.log("Função eventokeydown:  "+e.key); // São os eventos que serão chamados quando uma tecla é apertada;
+        }
+        input.addEventListener("keydown", eventokeydown);
+
+        const form = document.cadastro; // quando o form tem o atributo name
+        function eventosubmit(){
+            alert("Evento submit");
+        }
+        form.addEventListener("submit", eventosubmit);
+
+        const cidade = form.cidade; // pega o select que está no form com name 'cidade';
+        function eventochange(){
+            console.log("Evento change");
+        }
+        cidade.addEventListener("change", eventochange)
+
+        // EVENTOS DE MOUSE
+        // click, dbclick, mousedowm, mouseup, mousemove,
+        // mouseover, mouseout
+
+        window.addEventListener('mousemove', eventomousemove);
+        function eventomousemove(e){
+            const x = e.clientX;
+            const y = e.clientY;
+            console.log(`Eixo x: ${x}. Eixo Y: ${y}`);
+        }
+    </script>
+</body>
+</html>
